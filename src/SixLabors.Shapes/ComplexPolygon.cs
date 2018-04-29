@@ -162,7 +162,7 @@ namespace SixLabors.Shapes
         /// <returns>
         /// The number of intersections populated into the buffer.
         /// </returns>
-        public int FindIntersections(PointF start, PointF end, PointF[] buffer, int offset)
+        public int FindIntersections(PointF start, PointF end, IPointFWriter buffer, int offset)
         {
             int totalAdded = 0;
             for (int i = 0; i < this.paths.Length; i++)

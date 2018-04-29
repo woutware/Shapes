@@ -150,7 +150,7 @@ namespace SixLabors.Shapes
         }
 
         /// <inheritdoc/>
-        int IPath.FindIntersections(PointF start, PointF end, PointF[] buffer, int offset)
+        int IPath.FindIntersections(PointF start, PointF end, IPointFWriter buffer, int offset)
         {
             return this.innerPath.FindIntersections(start, end, buffer, offset);
         }

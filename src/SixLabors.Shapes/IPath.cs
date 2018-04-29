@@ -67,7 +67,7 @@ namespace SixLabors.Shapes
         /// <returns>
         /// The number of intersections populated into the buffer.
         /// </returns>
-        int FindIntersections(PointF start, PointF end, PointF[] buffer, int offset);
+        int FindIntersections(PointF start, PointF end, IPointFWriter buffer, int offset);
 
         /// <summary>
         /// Determines whether the <see cref="IPath"/> contains the specified point
